@@ -309,6 +309,12 @@ margin-left: 5px;
   gap: 20px;
 
 }
+@media only screen and (max-width: 960px) {
+  .projectBoxContainer {
+   gap:50px;
+
+  }
+}
 
 /*/ endProjects/*/
 
@@ -323,6 +329,9 @@ margin-left: 5px;
 @media only screen and (max-width: 960px) {
   .boxProject {
     margin:0px 5px;
+    margin-left: 50%;
+    align-self: center;
+
   }
 }
 @media only screen and (max-width: 960px) {
@@ -530,7 +539,7 @@ transition: transform 1s ease-in-out;
 }
 .socialBox{
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   display: flex;
   gap: 35px;
   justify-content: center;
@@ -544,6 +553,14 @@ transition: transform 1s ease-in-out;
   }
 }
 
+#firstOneSocial{
+  display: flex;
+  gap: 35px;
+}
+#firstTwoSocial{
+  display: flex;
+  gap: 35px;
+}
 
 .fa {
   padding: 50px;
@@ -572,7 +589,7 @@ transition: transform 1s ease-in-out;
 }
 @media only screen and (max-width: 960px) {
   .githubAndTwitterSvg {
-    height: 100px;
+    height: 92px;
   }
 }
 .githubAndTwitterSvg:hover{
