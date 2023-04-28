@@ -307,6 +307,7 @@ margin-left: 5px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 
 }
 @media only screen and (max-width: 960px) {
@@ -339,6 +340,7 @@ flex-direction: column;
 }
 .boxImg{
   width: 100%;
+
 
 
 }
