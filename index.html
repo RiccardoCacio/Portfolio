@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <!-- hTMLMetaTags -->
   <meta name="description" content="Hi, I'm Riccardo. I'm studying to become a FullStackDeveloper and this is my portfolio!">
 
@@ -37,7 +36,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
-  
+  <!-- flickity css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
@@ -110,58 +111,74 @@
     <a href="#headerProjects"> <img class="circleChevron" src="assets/svg/circle-chevron-down-solid.svg" alt=""></a>
   </div>
   <!--endChevronOne-->
+
+
     <!--startProjects-->
+
+   <!--startCarosello-->
     <h1 class="headerLink" id="headerProjects">Projects</h1>
-    <div class="projectBoxContainer">
-      <div class="boxProject"><img class="boxImg" src="assets/img/RandomPizzaLocandina.png" alt="Random pizza project image"  >
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+           <!--randomPizzaCell-->
+      <div class="carousel-cell">
+<img class="locandina" src="/portfolio/assets/img/RandomPizzaLocandina.png" alt="">
 <div class="boxOverlay">
-    <div class="boxTitle">RandomPizza</div>
-    <p class="boxDescription">RandomPizza is a my personal project, that I decided to develop given my eternal indecision 
-      for choose what type of pizza I can order to the restaurant.
-      So, RandomPizza is a simple app web that allows, with the help of a bottom, the generation of a random pizza.
-      For develop this project, I used my skills about Html, Css and Javascript.
-      What are you waiting for? This evening order a pizza helped by RandomPizza. 
-      <br> <p> <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/randompizza/"> Click here!  </a> </p> </p>
-    </div>
-    </div>
-
-
-   
-      <div class="boxProject"><img class="boxImg" src="assets/img/gameboy.png" alt="GameBoy Counter project image" >
-<div class="boxOverlay">
-    <div class="boxTitle">GameBoy Counter</div>
-    <p class="boxDescription">
-      “Gameboy Counter” consists of a counter able to increase or decrease its value and reset everything thanks to the special buttons! <p>
-        <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/GameboyCounter/"> Click here! </a> </p></p>
-    </div>
+  <div class="boxTitle">RandomPizza</div>
+  <p class="boxDescription">RandomPizza is a my personal project, that I decided to develop given my eternal indecision 
+    for choose what type of pizza I can order to the restaurant.
+    So, RandomPizza is a simple app web that allows, with the help of a bottom, the generation of a random pizza.
+    What are you waiting for? This evening order a pizza helped by RandomPizza. 
+    <br> <p> <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/randompizza/"> Click here!  </a> </p> </p>
   </div>
-
-  <div class="boxProject"><img class="boxImg" src="assets/img/TruffleDay.png" alt="Truffle day project image"  >
-    <div class="boxOverlay">
-        <div class="boxTitle">TruffleDay</div>
-        <p class="boxDescription"> TruffleDay is a web app that allows to know what type of truffle you can search in Umbria based on the currently period.
-          <br> <p> <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/TruffleDay/"> Click here!  </a> </p> </p>
-        </div>
-        </div>
-    
-    
-       
-          <div class="boxProject"><img class="boxImg" src="assets/img/ChangeColor.png" alt="Random color project image" >
-    <div class="boxOverlay">
-        <div class="boxTitle">ChangeColor</div>
-        <p class="boxDescription">
-          ChangeColor is a web app that on click change the background’s color randomly, and tell us the HEX code of the generated color.<p>
-            <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/ChangeColor/"> Click here! </a> </p></p>
-        </div>
       </div>
-  
-</div>
- <!--endProjects-->
+      <!--gameboyCounterCell-->
+      <div class="carousel-cell">
+        <img class="locandina" src="/portfolio/assets/img/gameboy.png" alt="">
+        <div class="boxOverlay">
+          <div class="boxTitle">GameBoy Counter</div>
+          <p class="boxDescription">
+            “Gameboy Counter” consists of a counter able to increase or decrease its value and reset everything thanks to the special buttons! <p>
+              <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/GameboyCounter/"> Click here! </a> </p></p>
+          </div>
+      </div>
+            <!--changeColorCell-->
+            <div class="carousel-cell">
+              <img class="locandina" src="/portfolio/assets/img/ChangeColor.png" alt="">
+              <div class="boxOverlay">
+                <div class="boxTitle">ChangeColor</div>
+                <p class="boxDescription">
+                  ChangeColor is a web app that on click change the background’s color randomly, and tell us the HEX code of the generated color.<p>
+                    <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/ChangeColor/"> Click here! </a> </p></p>
+                </div>
+            </div>
+          <!--truffleDayCell-->
+          <div class="carousel-cell">
+            <img class="locandina" src="/portfolio/assets/img/TruffleDay.png" alt="">
+            <div class="boxOverlay">
+              <div class="boxTitle">TruffleDay</div>
+              <p class="boxDescription"> TruffleDay is a web app that allows to know what type of truffle you can search in Umbria based on the currently period.
+                <br> <p> <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/TruffleDay/"> Click here!  </a> </p> </p>
+              </div>
+           </div>
+             <!--shoppingListCell-->
+             <div class="carousel-cell">
+              <img class="locandina" src="/portfolio/assets/img/shoppingList.png" alt="">
+              <div class="boxOverlay">
+                <div class="boxTitle">shoppingList</div>
+                <p class="boxDescription"> 
+                  As the name suggests is a shopping list that allows you to add and delete items from your list. Obviously if you close the page you won't lose anything thanks to saving in local storage.
+                  <br> <p> <a class="clickHere" target="_blank" href="https://riccardocacio.github.io/shoppingList/"> Click here!  </a> </p> </p>
+                </div>
+            </div>
+    </div>
 
+    <!--endCarosello-->
+    
+ 
     <!--startChevronOne-->
     <div class="circleChevronBox">
       <a href="#headerSkills"> <img class="circleChevron" src="assets/svg/circle-chevron-down-solid.svg" alt=""></a>
     </div>
+
     <!--endChevronOne-->
 
         <!--startSkills-->
@@ -176,7 +193,6 @@
 
 
           </div>
-
         </div>
          <!--endSkills-->
 
@@ -184,6 +200,7 @@
     <div class="circleChevronBox">
       <a href="#headerContacts"> <img class="circleChevron" src="assets/svg/circle-chevron-down-solid.svg" alt=""></a>
     </div>
+
     <!--endChevronOne-->
 
 
@@ -203,43 +220,22 @@
           </div>
         </div>
     </div>
+    </div>
      <!--endContact-->
-      <!--startSocial-->
-      <h1 class="headerSocial headerLink">My social profiles</h1>
-      <div class="socialParagraph"> 
-         <p> You can find my social media down here.</p>
-        <p>Take a look on my Github account,</p>
-        <p>Or write me on Telegram!</p></div>
-    <div class="socialBox">
-      <div id="firstOneSocial">
-      <a href="https://www.linkedin.com/in/riccardo-cacio-98713017a/" class="fa fa-linkedin"  target="_blank"></a>
-      <a href="https://www.instagram.com/riccardo_cacio/" class="fa fa-instagram" target="_blank"></a>
-    </div>
 
-    <div id="firstTwoSocial">
-      <a href="https://www.facebook.com/riccardocacio" class="fa fa-facebook"  target="_blank"></a>
-      <a href="https://twitter.com/riccardocacio" class="fa fa-twitter"   target="_blank"></a>
-    </div>
-    </div>
-    <div class="secondSocialBox">
-    <a href="https://github.com/RiccardoCacio" class="githubIcon" target="_blank"><img class="githubAndTwitterSvg" src="assets/svg/github.svg" alt="github logo" height=""></a>
-    <a href="https://t.me/riccardoc_c" class="githubIcon" target="_blank"><img class="githubAndTwitterSvg" src="assets/svg/telegram.svg" alt="telegram logo" height=""></a>
-  </div>
-    </div>
- <!--endSocial-->
  <!--startFooter-->
+
 <footer>
   <div class="footerContainer">
-    
     <div class="infoFooter">
-      <p>Info:</p>
+      <h4>Info:</h4>
       <p>Mail: riccardo1918@live.it</p>
       <p>Fabro(TR)</p>
       <p>Start2Impact Student</p>
-      
     </div>
+
     <div class="contactMeFooter">
-      <p class="paragraphFooter">Contact Me Now:</p>
+      <h4 class="paragraphFooter">Contact Me Now:</h4>
       <div class="contactMeFooterbox">
         <div class="sendMailFooter">
           <form action="mailto: riccardo1918@live.it" method="post" enctype="text/plain">
@@ -249,7 +245,7 @@
     </div>
   </div>
     <div class="socialFooter">
-      <p class="paragraphFooter">My Social profiles:</p>
+      <h4 class="paragraphFooter">My Social profiles:</h4>
       <div class="socialFooterBox">
       <a href="https://github.com/RiccardoCacio" class="footerSvgBox" target="_blank"><img class="footerSvg" src="assets/svg/github.svg" alt="github logo"></a>
       <a href="https://www.instagram.com/riccardo_cacio/" class="footerSvgBox" target="_blank"><img class="footerSvg" src="assets/svg/instagram.svg" alt="instagram logo" height=""></a>
@@ -260,5 +256,8 @@
 </div>
 </div>
 </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
